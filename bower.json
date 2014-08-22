@@ -1,0 +1,15 @@
+{
+  "name": "coursy-app",
+  "description": "A simple course registration web application",
+  "homepage": "https://github.com/activist/coursy",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "html5-boilerplate": "~4.3.0"
+  }
+}
