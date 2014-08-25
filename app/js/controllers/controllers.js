@@ -9,3 +9,5 @@ angular.module('coursyApp.controllers', [])
   .controller('MyCtrl2', ['$scope', function($scope) {
 
   }]);
+
+
