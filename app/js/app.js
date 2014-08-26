@@ -2,13 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-var coursyApp = angular.module('coursyApp', [
-	  'ngRoute',
-	  'coursyApp.filters',
-	  'coursyApp.services',
-	  'coursyApp.directives',
-	  'coursyApp.controllers'
-	]).
+var coursyApp = angular.module('coursyApp', ['ngRoute']).
 	config(['$routeProvider', function($routeProvider) {
 
 		$routeProvider.when('/',

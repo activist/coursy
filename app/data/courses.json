@@ -1,0 +1,30 @@
+
+[{
+	"id" : 1,
+	"name": "Dansband - korleis bli ein racer",
+	"instructors" : [
+		{ "name" : "Christer Sjøgren" }
+	],
+	"date" : "23/11/14",
+	"location": {
+				"venueName" : "Hotel Norge",
+				"address" : "Derja 23",
+				"zipcode" : "5223",
+				"city": "Bergen"
+			}
+},
+{
+	"id" : 2,
+	"name": "Et kurs er bra",
+	"instructors" : [
+		{ "name" : "Polly Petra" },
+		{ "name" : "Kim K" }
+	],
+	"date" : "24/11/14",
+	"location": {
+				"venueName" : "Hotel Lala",
+				"address" : "Derja 23",
+				"zipcode" : "5223",
+				"city" : "Bergen"
+			}
+}]

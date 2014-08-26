@@ -1,0 +1,11 @@
+<div class="col-lg-5">
+  <h3>{{ course.name }}</h3>
+  <span>Start date: {{ course.date }}</span>
+  <br />
+  <span>Instructor(s):</span>
+  <ul>
+    <li ng-repeat="instructor in course.instructors">
+      {{ instructor.name }}
+    </li>
+  </ul>
+</div>

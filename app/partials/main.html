@@ -1,12 +1,43 @@
 <div>
+  <form name="editCourseForm" ng-controller="EditCourseController" ng-submit="saveCourse(course, editCourseForm.$valid)">
+
+    <fieldset>
+      <legend>Add course</legend>
+      <div class="row">
+        <div class="form-group col-lg-5">
+          <label for="courseName">Course name</label>
+          <input id="courseName" class="form-control input-normal" required type="text" placeholde="Course name.." ng-model="course.name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-lg-5">
+          <label for="courseStartDate">Start date</label>
+          <input id="courseStartDate" class="form-control" type="date" required placeholder="Pick the start date" ng-model="course.date" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-lg-5">
+          <label>Instructors<input class="form-control" type="text" ng-model="instructor.name"></label>
+          <input class="btn btn-primary" ng-disabled="!isValidInstructorName(instructor.name)" type="button" name="" value="Add instructor" ng-click="addInstructor(instructor)">
+        </div>
+      </div>
+
+      <div class="row" ng-show="course.instructors.length > 0">
+        <ul>
+          <li ng-repeat="instructor in course.instructors">
+            {{ instructor.name }}
+          </li>
+        </ul>
+      </div>
+
+      <input class="btn btn-primary" ng-disabled="editCourseForm.$invalid" type="submit" name="" value="Save course">
+    </fieldset>
+  </form>
+
   <h1>Available courses</h1>
-    <div class="col-lg-4" ng-repeat="course in courses">
-      <h2>{{ course.name }}</h2>
-      <span>Start date: {{ course.date }}</span>
-      <br />
-      <span>Instructor(s):</span>
-      <ul>
-        <li ng-repeat="instructor in course.instructors"> {{ instructor.name }}</li>
-      </ul>
-    </div>
+  <div ng-repeat="course in courses">
+    <course-info course="course"/>
+  </div>
 </div>
