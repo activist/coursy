@@ -20,7 +20,10 @@
       <div class="row">
         <div class="form-group col-lg-5">
           <label>Instructors<input class="form-control" type="text" ng-model="instructor.name"></label>
-          <input class="btn btn-primary" ng-disabled="!isValidInstructorName(instructor.name)" type="button" name="" value="Add instructor" ng-click="addInstructor(instructor)">
+          <button class="btn btn-default " ng-disabled="!isValidInstructorName(instructor.name)" type="button" ng-click="addInstructor(instructor)">
+            <span class="glyphicon glyphicon-user"></span>
+            Add instructor
+          </button>
         </div>
       </div>
 
@@ -32,7 +35,10 @@
         </ul>
       </div>
 
-      <input class="btn btn-primary" ng-disabled="editCourseForm.$invalid" type="submit" name="" value="Save course">
+      <button class="btn btn-primary" ng-disabled="editCourseForm.$invalid" type="submit">
+        <span class="glyphicon glyphicon-save"></span>
+            Save course
+      </button>
     </fieldset>
   </form>
 
