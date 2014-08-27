@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ course.name }}</h3>
+  </div>
+  <div class="panel-body">
+    <img class="img-responsive img-thumbnail pull-left course-img" ng-src="{{ course.imgUrl }}" ng-show="course.imgUrl.length > 0" />
+    <p class="list-group-item-text">{{ course.description }} </p>
+    <p class="list-group-item-text">Start date: {{ course.date }}
+    <div class="instructor-list">
+  		<p>Instructor(s):</p>
+  		<ul class="list-group">
+  			<li class="list-group-item" ng-repeat="instructor in course.instructors">
+  				{{ instructor.name }}
+  			</li>
+  		</ul>
+    </div>
+  </div>
+</div>

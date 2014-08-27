@@ -2,6 +2,8 @@
 [{
 	"id" : 1,
 	"name": "Dansband - korleis bli ein racer",
+	"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac nisl quis velit dictum sollicitudin. Praesent luctus nibh non placerat interdum. Fusce placerat vehicula tellus id varius. Sed vitae dolor lorem. In vestibulum ut urna in ultricies. Integer fermentum dignissim sapien. Phasellus ac commodo turpis, vitae luctus enim. Praesent vel rhoncus ante, ac sagittis est. Praesent ullamcorper arcu eget dolor pellentesque, at viverra libero venenatis. Cras aliquam viverra laoreet.",
+	"imgUrl": "http://bysiden.no/img/happenings/4/4159/content.jpg",
 	"instructors" : [
 		{ "name" : "Christer Sjøgren" }
 	],
@@ -11,11 +13,13 @@
 				"address" : "Derja 23",
 				"zipcode" : "5223",
 				"city": "Bergen"
-			}
+	}
 },
 {
 	"id" : 2,
 	"name": "Et kurs er bra",
+	"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac nisl quis velit dictum sollicitudin. Praesent luctus nibh non placerat interdum. Fusce placerat vehicula tellus id varius. Sed vitae dolor lorem. In vestibulum ut urna in ultricies. Integer fermentum dignissim sapien. Phasellus ac commodo turpis, vitae luctus enim. Praesent vel rhoncus ante, ac sagittis est. Praesent ullamcorper arcu eget dolor pellentesque, at viverra libero venenatis. Cras aliquam viverra laoreet.",
+	"imgUrl": "http://www.instytut.skwp.pl/cache/imgs/_c300x240/gallery/instytut/kurs.jpg",
 	"instructors" : [
 		{ "name" : "Polly Petra" },
 		{ "name" : "Kim K" }
@@ -26,5 +30,5 @@
 				"address" : "Derja 23",
 				"zipcode" : "5223",
 				"city" : "Bergen"
-			}
+	}
 }]

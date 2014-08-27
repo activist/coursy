@@ -1,0 +1,62 @@
+<div>
+  <form name="editCourseForm" ng-submit="saveCourse(newcourse, editCourseForm.$valid)">
+
+    <fieldset>
+      <legend>Add course</legend>
+      <div class="row">
+        <div class="form-group col-lg-5">
+          <label for="courseName">Course name</label>
+          <input id="courseName" class="form-control input-normal" required type="text" placeholde="Course name.." ng-model="newcourse.name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-lg-2">
+          <label for="courseStartDate">Start date</label>
+          <input id="courseStartDate" class="form-control" type="date" required placeholder="Pick the start date" ng-model="newcourse.date" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-lg-5">
+          <label for="courseDescription">Description (optional)</label>
+          <textarea id="courseDescription" class="form-control" rows="4" cols="50" ng-model="newcourse.description"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-lg-5">
+          <label for="courseImage">Course image url (optional) </label>
+          <input id="courseImage img-thumbnail" class="form-control input-normal" type="text" placeholde="Url to image.." ng-model="newcourse.imgUrl">
+          <img ng-show="newcourse.imgUrl.length > 0" class="course-img" ng-src="{{ newcourse.imgUrl }}" style="width: 300px; height: 200px;" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-lg-5">
+          <label for="instructorName">
+            Instructor name
+            <input id="instructorName" class="form-control" type="text" ng-model="instructor.name">
+          </label>
+          <button class="btn btn-default " ng-disabled="!isValidInstructorName(instructor.name)" type="button" ng-click="addInstructor(instructor)">
+            <span class="glyphicon glyphicon-user"></span>
+            Add instructor
+          </button>
+        </div>
+      </div>
+
+      <div class="row" ng-show="newcourse.instructors.length > 0">
+        <ul>
+          <li ng-repeat="instructor in newcourse.instructors">
+            {{ instructor.name }}
+          </li>
+        </ul>
+      </div>
+
+      <button class="btn btn-primary" ng-disabled="editCourseForm.$invalid" type="submit">
+        <span class="glyphicon glyphicon-save"></span>
+            Save course
+      </button>
+    </fieldset>
+  </form>
+</div>

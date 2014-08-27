@@ -28,3 +28,12 @@
   content: "";
   padding: 0;
 }
+
+.instructor-list {
+  clear: left;
+}
+
+.course-img {
+  margin: 5px;
+  background-color: #D9D9DB;
+}
